@@ -64,7 +64,12 @@ int main()
     {
         string s;
         cin >> s;
-        if(s[0]>='A' && s[0]<='Z' && s[1]>='A' && s[1]<='Z')
+         bool flag=0;
+        if(s[0] == 'R' && ('0'<=s[1] && s[1]<='9') && 1 < s.find('C') && s.find('C') < s.size() - 1)
+            {
+                flag=1;
+            }
+        if(!flag)
         {
             int i=0;
             string c("");
